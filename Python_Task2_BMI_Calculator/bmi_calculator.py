@@ -28,12 +28,6 @@ elif(BMI>=25 and BMI<30):
 
 elif(BMI>=30 and BMI<35):
   print("Obese")
-
-elif(BMI>=35 and BMI<40):
-  print("Extremely Obese")
-
-elif(BMI>=40):
-  print("Morbidly Obese")
   
 else:
   print("Enter valid input.")
