@@ -14,7 +14,7 @@ BMI = w/(h*h)
 print(name)
 print(w)
 print(h)
-print(BMI)
+print(round(BMI,2))
 
 # BMI categories
 if(BMI<18.5):
