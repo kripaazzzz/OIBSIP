@@ -4,30 +4,32 @@ name = input("Enter your name: ")
 w = float(input("Enter weight(in kgs): "))
 h = float(input("Enter height(in cms):"))
 
-# height conversion in m
-h = h/100
-
-# BMI calculation
-BMI = w/(h*h)
-
-# user info
-print(name)
-print(w)
-print(h)
-print(round(BMI,2))
-
-# BMI categories
-if(BMI<18.5):
-  print("Underweight")
-
-elif(BMI>=18.5 and BMI<25):
-  print("Normal Weight")
-
-elif(BMI>=25 and BMI<30):
-  print("Overweight")
-
-elif(BMI>=30 and BMI<35):
-  print("Obese")
-  
-else:
+if w <= 0 or h <= 0:
   print("Enter valid input.")
+
+else:
+  # height conversion in m
+  h = h/100
+
+  # BMI calculation
+  BMI = w/(h*h)
+  
+  # user info
+  print("Name:", name)
+  print("Weight:", w)
+  print("Height:", h)
+  print("BMI:", round(BMI,2))
+  
+  # BMI categories
+  if(BMI<18.5):
+    print("Underweight")
+  
+  elif(BMI>=18.5 and BMI<25):
+    print("Normal Weight")
+  
+  elif(BMI>=25 and BMI<30):
+    print("Overweight")
+  
+  else:
+    print("Obese")
+  
