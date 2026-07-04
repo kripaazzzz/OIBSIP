@@ -11,7 +11,7 @@ else:
   BMI = w/(h*h)
   
   print("Name:", name)
-  print("Weight:", w)
+  print("Weight:", w, "kgs")
   print("Height:", h, "m")
   print("BMI:", round(BMI,2))
   
