@@ -22,8 +22,8 @@ def input_instruction ():
             instruction = listener.recognize_google(speech)
             instruction = instruction.lower()
             print(instruction)
-            if "jarvis" in instruction:
-                instruction = instruction.replace("jarvis", "").strip()
+            if "nova" in instruction:
+                instruction = instruction.replace("nova", "").strip()
                 print(instruction)
                 return instruction
 
@@ -34,7 +34,7 @@ def input_instruction ():
         talk("Please repeat")
         return ""
 
-def play_jarvis():
+def play_nova():
 
     instruction = input_instruction()
     print(instruction)
@@ -92,5 +92,5 @@ def play_jarvis():
     return True
 
 while True:
-    if play_jarvis() == False:
+    if play_nova() == False:
         break
