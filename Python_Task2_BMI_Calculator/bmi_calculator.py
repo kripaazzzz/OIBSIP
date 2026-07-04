@@ -12,7 +12,7 @@ else:
   
   print("Name:", name)
   print("Weight:", w)
-  print("Height:", h)
+  print("Height:", h, "m")
   print("BMI:", round(BMI,2))
   
   if(BMI<18.5):
